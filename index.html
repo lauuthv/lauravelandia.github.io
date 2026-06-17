@@ -1,404 +1,243 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Laura Velandia | Desarrolladora de Software</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#0f172a;
-    color:#fff;
-    line-height:1.6;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:linear-gradient(
-    135deg,
-    #0f172a,
-    #1e293b,
-    #2563eb
-    );
-}
-
-.hero-content{
-    display:flex;
-    align-items:center;
-    gap:60px;
-    flex-wrap:wrap;
-}
-
-.hero img{
-    width:320px;
-    height:320px;
-    object-fit:cover;
-    border-radius:50%;
-    border:6px solid #60a5fa;
-    box-shadow:0 0 40px rgba(96,165,250,.4);
-}
-
-.hero-text{
-    max-width:600px;
-}
-
-.hero-text h1{
-    font-size:3rem;
-    margin-bottom:10px;
-}
-
-.hero-text h2{
-    color:#93c5fd;
-    margin-bottom:20px;
-    font-weight:500;
-}
-
-.hero-text p{
-    font-size:1.1rem;
-    margin-bottom:30px;
-}
-
-.buttons{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    padding:12px 24px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn-primary{
-    background:#2563eb;
-    color:white;
-}
-
-.btn-primary:hover{
-    background:#1d4ed8;
-}
-
-.btn-secondary{
-    background:white;
-    color:#0f172a;
-}
-
-.btn-secondary:hover{
-    transform:translateY(-2px);
-}
-
-section{
-    padding:80px 0;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
-    font-size:2.2rem;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#1e293b;
-    padding:25px;
-    border-radius:20px;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card h3{
-    margin-bottom:15px;
-    color:#60a5fa;
-}
-
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    justify-content:center;
-}
-
-.skill{
-    background:#2563eb;
-    padding:10px 18px;
-    border-radius:25px;
-    font-size:.95rem;
-}
-
-.stats{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:20px;
-}
-
-.stat{
-    background:#1e293b;
-    text-align:center;
-    padding:25px;
-    border-radius:20px;
-}
-
-.stat h3{
-    color:#60a5fa;
-    font-size:2rem;
-}
-
-.contact{
-    text-align:center;
-}
-
-.contact a{
-    color:#60a5fa;
-    text-decoration:none;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#020617;
-}
-
-</style>
-</head>
-
-<body>
-
-<section class="hero">
-
-<div class="container">
-
-<div class="hero-content">
-
-<img src="laura.png" alt="Laura Velandia">
-
-<div class="hero-text">
-
-<h1>Laura Velandia</h1>
-
-<h2>Desarrolladora de Software Junior</h2>
-
-<p>
-Tecnóloga en Análisis y Desarrollo de Software y estudiante de Ingeniería de Sistemas.
-Experiencia en desarrollo web y móvil, bases de datos, APIs REST y pruebas funcionales.
-</p>
-
-<div class="buttons">
-
-<a href="https://github.com/lauthv" target="_blank" class="btn btn-primary">
-GitHub
-</a>
-
-<a href="mailto:laurapedrazav145@gmail.com" class="btn btn-secondary">
-Contactar
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">Perfil Profesional</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Desarrollo Frontend</h3>
-<p>
-Experiencia en Angular, Ionic, TypeScript, HTML5 y CSS3 para aplicaciones web y móviles.
-</p>
-</div>
-
-<div class="card">
-<h3>Backend</h3>
-<p>
-Desarrollo e integración de APIs REST utilizando Node.js y Express.
-</p>
-</div>
-
-<div class="card">
-<h3>QA Testing</h3>
-<p>
-Pruebas funcionales y validación de APIs REST mediante Postman.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">Tecnologías</h2>
-
-<div class="skills">
-
-<span class="skill">Angular</span>
-<span class="skill">Ionic</span>
-<span class="skill">Node.js</span>
-<span class="skill">TypeScript</span>
-<span class="skill">JavaScript</span>
-<span class="skill">SQL Server</span>
-<span class="skill">MySQL</span>
-<span class="skill">Git</span>
-<span class="skill">GitHub</span>
-<span class="skill">Postman</span>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">Experiencia</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Auxiliar de Tecnología</h3>
-
-<p>
-Desarrollo, mantenimiento y soporte de aplicaciones web y móviles.
-Administración de bases de datos SQL Server y MySQL.
-Pruebas funcionales, validación de APIs REST y solución de incidencias.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">Proyectos</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Aplicación de Navegación Ionic</h3>
-
-<p>
-Aplicación desarrollada con Ionic y Angular para navegación entre páginas mediante rutas y componentes.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">Formación</h2>
-
-<div class="stats">
-
-<div class="stat">
-<h3>8°</h3>
-<p>Semestre Ingeniería de Sistemas</p>
-</div>
-
-<div class="stat">
-<h3>SENA</h3>
-<p>Tecnólogo ADSO</p>
-</div>
-
-<div class="stat">
-<h3>B1</h3>
-<p>Inglés</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container contact">
-
-<h2 class="section-title">Contacto</h2>
-
-<p>📧 laurapedrazav145@gmail.com</p>
-
-<p>📱 3112171307</p>
-
-<p>
-🐙 <a href="https://github.com/lauthv" target="_blank">github.com/lauthv</a>
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>© 2025 Laura Natali Velandia Pedraza</p>
-
-</footer>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Laura Velandia | Software Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Laura.dev</div>
+
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Tecnologías</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <section class="hero">
+        <div class="hero-image">
+          <img src="laura.png" alt="Laura Velandia" />
+        </div>
+
+        <div class="hero-content">
+          <h1>Laura Natali Velandia Pedraza</h1>
+
+          <p>
+            Desarrolladora y Analista de Software con experiencia en desarrollo
+            web y móvil, pruebas funcionales, validación de APIs REST y
+            administración de bases de datos.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="https://github.com/lauthv" class="btn primary"> GitHub </a>
+
+            <a href="assets/cv.pdf" class="btn secondary"> Descargar CV </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="hero-content">
+        <span class="badge"> 🚀 Disponible para oportunidades remotas </span>
+        <h2 id="typing"></h2>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>2+</h3>
+            <p>Proyectos</p>
+          </div>
+
+          <div class="stat">
+            <h3>10+</h3>
+            <p>Tecnologías</p>
+          </div>
+
+          <div class="stat">
+            <h3>QA</h3>
+            <p>Testing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Sobre mí</h2>
+
+      <div class="card">
+        <p>
+          Tecnóloga en Análisis y Desarrollo de Software y estudiante de
+          Ingeniería de Sistemas. Me apasiona el desarrollo de aplicaciones web
+          y móviles, la mejora continua y la resolución de problemas mediante
+          soluciones tecnológicas eficientes.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Stack Tecnológico</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>🎨 Frontend</h3>
+
+          <div class="skills-grid">
+            <div class="skill">Angular</div>
+            <div class="skill">Ionic</div>
+            <div class="skill">TypeScript</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>⚙️ Backend</h3>
+
+          <div class="skills-grid">
+            <div class="skill">Node.js</div>
+            <div class="skill">PHP</div>
+            <div class="skill">APIs REST</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>🗄️ Bases de Datos</h3>
+
+          <div class="skills-grid">
+            <div class="skill">SQL Server</div>
+            <div class="skill">MySQL</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>🛠️ Herramientas</h3>
+
+          <div class="skills-grid">
+            <div class="skill">Git</div>
+            <div class="skill">GitHub</div>
+            <div class="skill">Postman</div>
+            <div class="skill">cPanel</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>📱 Desarrollo Móvil</h3>
+
+          <div class="skills-grid">
+            <div class="skill">Ionic</div>
+            <div class="skill">Android Studio</div>
+            <div class="skill">Publicación Android</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>¿Qué puedo aportar?</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>💻 Desarrollo Web</h3>
+
+          <p>
+            Desarrollo y mantenimiento de aplicaciones web utilizando Angular,
+            TypeScript y tecnologías modernas.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>📱 Desarrollo Móvil</h3>
+
+          <p>
+            Construcción de aplicaciones híbridas con Ionic, Android Studio y
+            despliegue móvil.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🧪 QA Testing</h3>
+
+          <p>
+            Validación funcional, pruebas de APIs REST, reporte de incidencias y
+            documentación.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Proyectos Destacados</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>📱 Aplicación de Navegación Ionic</h3>
+
+          <p>
+            Aplicación desarrollada con Ionic y Angular implementando navegación
+            entre páginas mediante rutas, componentes reutilizables y diseño
+            responsive.
+          </p>
+
+          <br />
+
+          <a href="https://github.com/lauthv" target="_blank">
+            Ver proyecto →
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>🔌 Validación de APIs REST</h3>
+
+          <p>
+            Proyecto orientado a pruebas funcionales utilizando Postman para
+            validar endpoints, respuestas HTTP y manejo de errores.
+          </p>
+
+          <br />
+
+          <a href="https://github.com/lauthv" target="_blank">
+            Ver proyecto →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+
+      <p>📧 laurapedrazav145@gmail.com</p>
+
+      <br />
+
+      <p>📱 3112171307</p>
+
+      <br />
+
+      <p>
+        🐙
+        <a href="https://github.com/lauthv" target="_blank">
+          github.com/lauthv
+        </a>
+      </p>
+    </section>
+
+    <button id="topBtn">↑</button>
+
+    <script src="script.js"></script>
+  </body>
 </html>
